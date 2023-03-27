@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/toConstraint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:text="@string/to_Constraint"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_140"
+        android:layout_marginStart="@dimen/dp_170"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/toFrame"
+        app:layout_constraintTop_toBottomOf="@id/toConstraint"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_Frame"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_140"
+        android:layout_marginStart="@dimen/dp_170"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/toLinear"
+        app:layout_constraintTop_toBottomOf="@id/toFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_linear"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_140"
+        android:layout_marginStart="@dimen/dp_170"
+        >
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
