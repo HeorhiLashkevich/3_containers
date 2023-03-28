@@ -26,4 +26,5 @@
     <dimen name="dp_476">476dp</dimen>
     <dimen name="dp_6">6dp</dimen>
     <dimen name="dp_170">170dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
 </resources>
