@@ -8,8 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,15 +21,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        EditText editText = (EditText) findViewById(R.id.edittext);
-        ImageView imageView = (ImageView) findViewById(R.id.imageView);
-
+        EditText editText = findViewById(R.id.edittext);
+        ImageView imageView = findViewById(R.id.imageView);
         Button imageButton =
-                (Button) findViewById(R.id.imageButton);
-        View.OnClickListener onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                findViewById(R.id.imageButton);
+        View.OnClickListener onClickListener = view -> {
+            try {
                 Picasso.get().load(editText.getText().toString()).into(imageView);
+                if (imageView.getDrawable() == null) {
+                    Toast.makeText(getApplicationContext(), "Wrong link1",
+                                    Toast.LENGTH_SHORT)
+                            .show();
+                }
+            } catch (Exception e) {
+                Toast.makeText(getApplicationContext(), "Empty link",
+                                Toast.LENGTH_SHORT)
+                        .show();
+
             }
         };
         imageButton.setOnClickListener(onClickListener);
