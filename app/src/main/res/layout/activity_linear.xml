@@ -1,181 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:background="@color/grey"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_austria_svg" />
+
+        <TextView
+            android:id="@+id/textLinearAus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/austria"
+            android:textSize="@dimen/sp_30" />
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_austria_svg" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/austria"
-                android:textSize="@dimen/sp_30" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_colombia_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/colombia"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_colombia_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/colombia"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_denmark_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/denmark"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_denmark_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/denmark"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_italy_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/italy"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_italy_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/italy"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_madagascar_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/madagascar"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_madagascar_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/madagascar"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_poland_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/poland"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_poland_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/poland"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_switzerland_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/switzerland"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_switzerland_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/switzerland"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
+            android:src="@drawable/flag_of_thailand_svg" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_6"
-            android:orientation="horizontal">
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/thailand"
+            android:textSize="@dimen/sp_30" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/dp_140"
-                android:layout_height="@dimen/dp_84"
-                android:src="@drawable/flag_of_thailand_svg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="@dimen/dp_40"
-                android:layout_marginTop="@dimen/dp_30"
-                android:text="@string/thailand"
-                android:textSize="@dimen/sp_30" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/mainFromLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_mainactivity"
+            >
+
+        </Button>
+    </LinearLayout>
+
 
 
     </LinearLayout>

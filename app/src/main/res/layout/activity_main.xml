@@ -12,7 +12,7 @@
         android:text="@string/to_Constraint"
         android:textColor="@color/white"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_140"
+        android:layout_marginTop="@dimen/dp_70"
         android:layout_marginStart="@dimen/dp_170"
         >
 
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="@string/to_Frame"
         android:textColor="@color/white"
-        android:layout_marginTop="@dimen/dp_140"
+        android:layout_marginTop="@dimen/dp_70"
         android:layout_marginStart="@dimen/dp_170"
         >
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="@string/to_linear"
         android:textColor="@color/white"
-        android:layout_marginTop="@dimen/dp_140"
+        android:layout_marginTop="@dimen/dp_70"
         android:layout_marginStart="@dimen/dp_170"
         >
 

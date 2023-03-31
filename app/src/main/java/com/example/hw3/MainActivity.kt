@@ -1,6 +1,7 @@
 package com.example.hw3
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,13 +20,17 @@ class MainActivity : AppCompatActivity() {
         toFrameButton = findViewById(R.id.toFrame)
         toLinearButton = findViewById(R.id.toLinear)
         toConstraintButton.setOnClickListener {
-            setContentView(R.layout.activity_constrain)
+            val intent = Intent(this, ConstrainActivity::class.java)
+            startActivity(intent)
+
         }
         toFrameButton.setOnClickListener {
-            setContentView(R.layout.activity_frame)
+            val intent = Intent(this, FrameActivity::class.java)
+            startActivity(intent)
         }
         toLinearButton.setOnClickListener {
-            setContentView(R.layout.activity_linear)
+            val intent = Intent(this, LinearActivity::class.java)
+            startActivity(intent)
         }
     }
 }

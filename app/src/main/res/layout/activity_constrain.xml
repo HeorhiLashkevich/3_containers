@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey"
         tools:context=".MainActivity">
 
+        <Button
+            android:id="@+id/toMainFromConstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_mainactivity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageThailand">
+
+        </Button>
+
+
         <ImageView
             android:id="@+id/imageAustria"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:src="@drawable/flag_of_austria_svg"
             app:layout_constraintRight_toLeftOf="@id/textAustria"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,8 +51,8 @@
 
         <ImageView
             android:id="@+id/imageColombia"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_colombia_svg"
             app:layout_constraintRight_toLeftOf="@id/textColombia"
@@ -65,8 +76,8 @@
 
         <ImageView
             android:id="@+id/imageDenmark"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_denmark_svg"
             app:layout_constraintRight_toLeftOf="@id/textColombia"
@@ -92,8 +103,8 @@
 
         <ImageView
             android:id="@+id/imageItaly"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_italy_svg"
             app:layout_constraintRight_toLeftOf="@id/textDenmark"
@@ -119,8 +130,8 @@
 
         <ImageView
             android:id="@+id/imageMadagascar"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_madagascar_svg"
             app:layout_constraintRight_toLeftOf="@id/textItaly"
@@ -146,8 +157,8 @@
 
         <ImageView
             android:id="@+id/imagePoland"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_poland_svg"
             app:layout_constraintRight_toLeftOf="@id/textMadagascar"
@@ -173,8 +184,8 @@
 
         <ImageView
             android:id="@+id/imageSwitzerland"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_switzerland_svg"
             app:layout_constraintRight_toLeftOf="@id/textPoland"
@@ -200,8 +211,8 @@
 
         <ImageView
             android:id="@+id/imageThailand"
-            android:layout_width="@dimen/dp_140"
-            android:layout_height="@dimen/dp_84"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_42"
             android:layout_marginTop="@dimen/dp_8"
             android:src="@drawable/flag_of_thailand_svg"
             app:layout_constraintRight_toLeftOf="@id/textSwitzerland"
@@ -225,5 +236,7 @@
 
         </TextView>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
+
